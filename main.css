@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --Dark__cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very__dark__blue: hsl(212, 21%, 14%);
+    --Dark__grayish__blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --montserrat: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+    font-size: 1.25rem;
+    background-color: var(--Cream);
+    color: var(--Dark__grayish__blue);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .tarjeta{
+    display: flex;
+    width: 50%;
+    height: auto;
+    background-color: var(--White);
+    border-radius: 25px;
+background: #ffffff;
+box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+
+.container .tarjeta .image{
+    width: 50%;
+    border-radius: 25px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    object-fit: cover;
+}
+
+.container .tarjeta .content{
+    width: 50%;
+    padding: 2rem 2rem;
+}
+
+.tarjeta .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto; margin-right: auto;
+    margin-top: auto; margin-bottom: auto;
+}
+
+.content .top{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.content .header{
+    font-family: var(--fraunces);
+    color: var(--Very__dark__blue);
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+
+.content .text{
+    line-height: 1.8rem;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.content .price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.price .cost{
+    font-family: var(--fraunces);
+    color: var(--Dark__cyan);
+    font-size: 3.5rem;
+    margin-right: 1.5rem;
+}
+
+.price .rebaja{
+    text-decoration: line-through;
+}
+
+.content .btn{
+    width: 100%;
+    background-color: var(--Dark__cyan);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    color: var(--White);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+
+.btn label[name="carrito"]{
+    padding-right: .5rem;
+}
+
+h1, h2{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 375px) {
+
+    .container{
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .container .tarjeta{
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem;
+    display: block;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.content {
+    background-color: var(--White);
+    border-radius: 0 0 15px 15px;
+}
+
+.container .tarjeta .image{
+    width: 100%;
+    height: 250px;
+    border-radius: 0;
+    margin-top: 2rem;
+}
+
+.image img{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: top;
+}
+
+.container .tarjeta .content{
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.tarjeta .content{
+    margin: 0;
+}
+
+
+.content .header{
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.content .text{
+    line-height: 1.8rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.content .price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.price .cost{
+    font-family: var(--fraunces);
+    color: var(--Dark__cyan);
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.price .rebaja{
+    text-decoration: line-through;
+}
+
+.content .btn{
+    width: 100%;
+    background-color: var(--Dark__cyan);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    color: var(--White);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+
+.btn label[name="carrito"]{
+    padding-right: .5rem;
+}
+}
